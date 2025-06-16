@@ -166,9 +166,9 @@ Hello World, this is my first post.
 
 ## Корисні посилання
 
-- https://docs.github.com/en/pages/quickstart
-- https://thinhdanggroup.github.io/github-blog/#introduction
-- https://jekyllrb.com/docs/pages/
-- дууже довга стаття https://www.aleksandrhovhannisyan.com/blog/getting-started-with-jekyll-and-github-pages/
-- https://pages.github.com/
+- [docs.github.com](https://docs.github.com/en/pages/quickstart)
+- [thinhdanggroup.github.io](https://thinhdanggroup.github.io/github-blog/#introduction)
+- [jekyllrb.com](https://jekyllrb.com/docs/pages/)
+- [aleksandrhovhannisyan.com](https://www.aleksandrhovhannisyan.com/blog/getting-started-with-jekyll-and-github-pages/)
+- [pages.github.com](https://pages.github.com/)
 
