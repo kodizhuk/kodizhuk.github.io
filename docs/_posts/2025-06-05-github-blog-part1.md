@@ -24,11 +24,11 @@ GitHub Pages — це безкоштовний сервіс від GitHub, як�
 
 ## 1\. Створюємо новий github репозиторій для блогу
 
-![b134bd1d29864c87f9aea89b8e682826.png](/assets/resources/b134bd1d29864c87f9aea89b8e682826.png)
+![github-blog-1.png](/assets/resources/github-blog-1.png)
 
 вставити імя репозиторію, і обовязково зробити репозиторій "Public", та поставити галочку "Add a README file"
 
-![5fbd9c26624e902475f71da508e8719c.png](/assets/resources/5fbd9c26624e902475f71da508e8719c.png)
+![github-blog-2.png](/assets/resources/github-blog-2.png)
 
 Далі ідемо відкриваємо на компютері папку де будемо створювати наш блог, і скачуємо наш репозиторій
 
@@ -36,7 +36,7 @@ GitHub Pages — це безкоштовний сервіс від GitHub, як�
 git clone https://github.com/kodizhuk/kodizhuk.github.io.git
 ```
 
-![b72e7d20e89b6e1b5890d1ac483e66e4.png](/assets/resources/b72e7d20e89b6e1b5890d1ac483e66e4.png)
+![github-blog-3.png](/assets/resources/github-blog-3.png)
 
 Я все робитиму через Linux, а точніше WSL (Windows Subsystem for Linux). Так простіше.
 
@@ -54,7 +54,7 @@ git clone https://github.com/kodizhuk/kodizhuk.github.io.git
 
 &nbsp;
 
-```bash
+```
 .
 ├── _config.yml         # Налаштування сайту
 ├── _posts/             # Пости (Markdown-файли з датами)
@@ -66,13 +66,13 @@ git clone https://github.com/kodizhuk/kodizhuk.github.io.git
 
 Заходимо в нашу папку яку ми скачали з git:
 
-```shell
+```bash
 cd .\kodizhuk.github.io\
 ```
 
 і створюємо нову папочку docs, і заходимо в неї
 
-```shell
+```bash
 mkdir docs
 cd docs
 ```
@@ -85,13 +85,13 @@ gem install bundler jekyll
 
 створюємо Jekyll сайт
 
-```shell
+```bash
 jekyll new --skip-bundle .
 ```
 
 відкриваємо файл Gemfile і коментуємо рядок і розкоментовуємо github-pages
 
-```shell
+```bash
 #gem "jekyll", "~> 4.4.1"
 gem "github-pages", group: :jekyll_plugins
 
@@ -99,17 +99,17 @@ gem "github-pages", group: :jekyll_plugins
 
 відкриваємо файл .gitignore і добавляємо туди
 
-```shell
+```bash
 Gemfile.lock
 ```
 
 Щоб перевірити сайт локально можна запустити команду нижче та переглянути сайт по адресі http://127.0.0.1:4000.
 
-```shell
+```bash
 bundle exec jekyll serve
 ```
 
-<img src="/assets/resources/7b2e986c643832116631fb69ab139c5f.png" alt="7b2e986c643832116631fb69ab139c5f.png" width="712" height="235" class="jop-noMdConv">
+<img src="/assets/resources/github-blog-4.png" alt="github-blog-4.png" width="712" height="235" class="jop-noMdConv">
 
 Вітаємо, сайт працює.
 
@@ -125,13 +125,13 @@ git push
 
 Сайт опублікується автоматично із гілки main, але при потребі можна глянути на github як він це робить. Відкриваємо Actions
 
-![284af78b001930394bba10185d878a65.png](/assets/resources/284af78b001930394bba10185d878a65.png)
+![github-blog-5.png](/assets/resources/github-blog-5.png)
 
 
 
 відкриваємо останній pages-build-deployment
 
-![6cc169ba63b816a7b501cafa1ef3dd77.png](/assets/resources/6cc169ba63b816a7b501cafa1ef3dd77.png)
+![github-blog-6.png](/assets/resources/github-blog-6.png)
 
 тут при потребі можна перезапустити деплой вручну
 
@@ -141,7 +141,7 @@ git push
 
 Кожна нова стаття повинна мати назву у форматі `YEAR-MONTH-DAY-title.md`. Там вже лежить приклад, копіюємо його, редагуємо. Я його назву 2025-06-04-test.md, і закину туди текст:
 
-```
+```bash
 ---
 layout: post
 title:  "Firts Post"
@@ -160,7 +160,7 @@ Hello World, this is my first post.
 
 Після деплою можемо переглянути зміни - на головній сторінці появився наш пост.
 
-<img src="/assets/resources/24fe765b6f1ae1e1eaeaec9d6200cbf0.png" alt="24fe765b6f1ae1e1eaeaec9d6200cbf0.png" width="253" height="339" class="jop-noMdConv">  <img src="/assets/resources/76362d6b970bfcaad36aec3b177545ad.png" alt="76362d6b970bfcaad36aec3b177545ad.png" width="245" height="334" class="jop-noMdConv">
+<img src="/assets/resources/github-blog-7.png" alt="github-blog-7.png" width="253" height="339" class="jop-noMdConv">  <img src="/assets/resources/github-blog-8.png" alt="github-blog-8.png" width="245" height="334" class="jop-noMdConv">
 
 &nbsp;
 
