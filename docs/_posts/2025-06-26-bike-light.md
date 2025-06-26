@@ -9,7 +9,7 @@ toc: true
 toc_label: "Posts"
 ---
 
-Розбірка, схема, і переробка на Type-C зарядку для вело ліхтаря Oneride
+Розбірка, схема і переробка на Type-C зарядку для вело ліхтаря Oneride
 
 ![bike-light-1.png](/assets/resources/bike-light-1.png)
 
@@ -43,30 +43,38 @@ toc_label: "Posts"
 
 Тобто на макс яскравості виходить що ліхтарик зможе просвітити в кращому випадку 500mAh/400mA = 1.25год, а сказали що світитиме 1.75год, трохи надбавили.
 
-Струм споживання постійний і не змінюється при розрядці акумулятора, це означає що є LED драйвер, і ліхтарик світитиме однаково коли акум заряджений і коли розряджений.
+Струм споживання постійний і не змінюється при розрядці акумулятора, це означає що є LED драйвер, і ліхтарик світитиме однаково коли акум заряджений та коли розряджений.
 
 Ліхтарик автоматично вимкнеться при розряді акумулятора до 2.4V. Щоб девайс знову запустився потрібно щоб напруга на акумуляторі була більшою за 2.7V.
 
 ## Схема
 
-![bike-light-2.png](/assets/resources/bike-light-2.png)
+<figure>
+  <a href="/assets/resources/bike-light-2.png">
+    <img src="/assets/resources/bike-light-2.png" alt="diagram">
+  </a>
+</figure>
 
 Список компонентів:
 
 - MEL7136A - Linear Adjustable Constant Current LED Driver
-- MCU - затерта назва, 4 ніжки
-- XT4054 - мікросхема зарядки акумулятора, до 500mA макс.
+- MCU - затерта назва, 8 ніжок
+- XT4054 - мікросхема зарядки акумулятора, до 500mA макс
 - D33Y - якась LDO, можливо AP7370-33Y-13
 
-![bike-light-3.png](/assets/resources/bike-light-3.png)
+<figure class="two">
+  <img src="/assets/resources/bike-light-3.png">
+  <img src="/assets/resources/bike-light-4.png">
+</figure>
 
-![bike-light-4.png](/assets/resources/bike-light-4.png)
-
-![bike-light-5.png](/assets/resources/bike-light-5.png)
+<figure>
+  <a href="/assets/resources/bike-light-5.png"><img src="/assets/resources/bike-light-5.png" alt="components"></a>
+</figure>
 
 ## Заміна Micro USB на USB Type-C
 
-При використанні роз'єму Type-C просто перепаяти коннектор замість micro USB не вийде. В micro USB напруга завжди 5V. Яку зарядку не підключиш - завжди буде живлення 5V. Type-C ж може видавати різну напругу (за умови використання Type-C to Type-C шнура. Якщо кабель Type-A to Type-C то буде лише 5V).
+При використанні роз'єму Type-C просто перепаяти коннектор замість micro USB не вийде. В micro USB напруга завжди 5V. Яку зарядку не підключиш - завжди буде живлення 5V. 
+Type-C ж може видавати різну напругу (за умови використання Type-C<==>Type-C шнура. Якщо кабель Type-A<==>Type-C то буде лише 5V).
 
 У Type-C виводів багато (якщо якісь не використовуються, то їх часто просто не підключають)
 
@@ -76,19 +84,23 @@ toc_label: "Posts"
 
 На алі продаються ось такі роз'єми USB Type-C, там де стрілка треба запаяти резистор, і тоді цей роз'єм працюватиме з будь-яким зарядним пристроєм.
 
-
 ![bike-light-7.png](/assets/resources/bike-light-7.png)
 
 ![bike-light-8.png](/assets/resources/bike-light-8.png)
 
 ![bike-light-9.png](/assets/resources/bike-light-9.png)
-![bike-light-10.jpg](/assets/resources/bike-light-10.jpg)
-![bike-light-11.jpg](/assets/resources/bike-light-11.jpg)
-![bike-light-12.jpg](/assets/resources/bike-light-12.jpg)
-![bike-light-13.jpg](/assets/resources/bike-light-13.jpg)
-![bike-light-14.jpg](/assets/resources/bike-light-14.jpg)
-![bike-light-15.jpg](/assets/resources/bike-light-15.jpg)
-![bike-light-16.jpg](/assets/resources/bike-light-16.jpg)
-![bike-light-17.jpg](/assets/resources/bike-light-17.jpg)
-![bike-light-18.jpg](/assets/resources/bike-light-18.jpg)
-![bike-light-19.jpg](/assets/resources/bike-light-19.jpg)
+
+## Фото
+
+<figure>
+  <a href="/assets/resources/bike-light-10.jpg"><img src="/assets/resources/bike-light-10.jpg" ></a>
+  <a href="/assets/resources/bike-light-11.jpg"><img src="/assets/resources/bike-light-11.jpg" ></a>
+  <a href="/assets/resources/bike-light-12.jpg"><img src="/assets/resources/bike-light-12.jpg" ></a>
+  <a href="/assets/resources/bike-light-13.jpg"><img src="/assets/resources/bike-light-13.jpg" ></a>
+  <a href="/assets/resources/bike-light-14.jpg"><img src="/assets/resources/bike-light-14.jpg" ></a>
+  <a href="/assets/resources/bike-light-15.jpg"><img src="/assets/resources/bike-light-15.jpg" ></a>
+  <a href="/assets/resources/bike-light-16.jpg"><img src="/assets/resources/bike-light-16.jpg" ></a>
+  <a href="/assets/resources/bike-light-17.jpg"><img src="/assets/resources/bike-light-17.jpg" ></a>
+  <a href="/assets/resources/bike-light-18.jpg"><img src="/assets/resources/bike-light-18.jpg" ></a>
+  <a href="/assets/resources/bike-light-19.jpg"><img src="/assets/resources/bike-light-19.jpg" ></a>
+</figure>
