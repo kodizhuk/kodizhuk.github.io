@@ -13,6 +13,7 @@ toc_label: "Posts"
 
 ![bike-light-1.png](/assets/resources/bike-light-1.png)
 
+
 ## Характеристики
 **Параметри **(із сайту виробника**)**:
 
@@ -63,10 +64,9 @@ toc_label: "Posts"
 - D33Y - якась LDO, можливо AP7370-33Y-13
 
 <figure class="two">
-  <img src="/assets/resources/bike-light-3.png">
-  <img src="/assets/resources/bike-light-4.png">
+  <img src="/assets/resources/bike-light-3.png" style="width: 12vw; min-width: 15px;">
+  <img src="/assets/resources/bike-light-4.png" style="width: 15vw; min-width: 15px;">
 </figure>
-
 <figure>
   <a href="/assets/resources/bike-light-5.png"><img src="/assets/resources/bike-light-5.png" alt="components"></a>
 </figure>
@@ -92,15 +92,13 @@ Type-C ж може видавати різну напругу (за умови �
 
 ## Фото
 
-<figure>
-  <a href="/assets/resources/bike-light-10.jpg"><img src="/assets/resources/bike-light-10.jpg" ></a>
-  <a href="/assets/resources/bike-light-11.jpg"><img src="/assets/resources/bike-light-11.jpg" ></a>
-  <a href="/assets/resources/bike-light-12.jpg"><img src="/assets/resources/bike-light-12.jpg" ></a>
-  <a href="/assets/resources/bike-light-13.jpg"><img src="/assets/resources/bike-light-13.jpg" ></a>
-  <a href="/assets/resources/bike-light-14.jpg"><img src="/assets/resources/bike-light-14.jpg" ></a>
-  <a href="/assets/resources/bike-light-15.jpg"><img src="/assets/resources/bike-light-15.jpg" ></a>
-  <a href="/assets/resources/bike-light-16.jpg"><img src="/assets/resources/bike-light-16.jpg" ></a>
-  <a href="/assets/resources/bike-light-17.jpg"><img src="/assets/resources/bike-light-17.jpg" ></a>
-  <a href="/assets/resources/bike-light-18.jpg"><img src="/assets/resources/bike-light-18.jpg" ></a>
-  <a href="/assets/resources/bike-light-19.jpg"><img src="/assets/resources/bike-light-19.jpg" ></a>
-</figure>
+<a href="/assets/resources/bike-light-10.jpg"><img src="/assets/resources/bike-light-10.jpg" style="width: 5vw; min-width: 10px;" ></a>
+<a href="/assets/resources/bike-light-11.jpg"><img src="/assets/resources/bike-light-11.jpg" style="width: 5vw; min-width: 10px;" ></a>
+<a href="/assets/resources/bike-light-12.jpg"><img src="/assets/resources/bike-light-12.jpg" style="width: 6vw; min-width: 10px;" ></a>  
+<a href="/assets/resources/bike-light-14.jpg"><img src="/assets/resources/bike-light-14.jpg" style="width: 5vw; min-width: 10px;"></a>
+<a href="/assets/resources/bike-light-13.jpg"><img src="/assets/resources/bike-light-13.jpg" style="width: 5vw; min-width: 10px;"></a>
+<a href="/assets/resources/bike-light-15.jpg"><img src="/assets/resources/bike-light-15.jpg" style="width: 5vw; min-width: 10px;"></a>
+<a href="/assets/resources/bike-light-16.jpg"><img src="/assets/resources/bike-light-16.jpg" style="width: 5vw; min-width: 10px;"></a>
+<a href="/assets/resources/bike-light-17.jpg"><img src="/assets/resources/bike-light-17.jpg" style="width: 5vw; min-width: 10px;"></a>
+<a href="/assets/resources/bike-light-18.jpg"><img src="/assets/resources/bike-light-18.jpg" style="width: 5vw; min-width: 10px;"></a>
+<a href="/assets/resources/bike-light-19.jpg"><img src="/assets/resources/bike-light-19.jpg" style="width: 5vw; min-width: 10px;"></a>
