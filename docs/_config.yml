@@ -10,7 +10,7 @@ remote_theme             : "mmistakes/minimal-mistakes@master"
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "uk-UA"
 title                    : "KODIZHUK blog"
 title_separator          : "-"
 subtitle                 : "just notes for myself"
@@ -26,7 +26,9 @@ masthead_title           : # overrides the website title displayed in the masthe
 words_per_minute         : 200
 enable_copy_code_button  : true
 comments:
-  provider               : "false" # false (default), "disqus", "discourse", "facebook", "staticman_v2", "staticman", "utterances", "giscus", "custom"
+  provider               : "staticman_v2" # false (default), "disqus", "discourse", "facebook", "staticman_v2", "staticman", "utterances", "giscus", "custom"
+  staticman:
+    branch                : "master"
   disqus:
     shortname            :
   discourse:
@@ -228,7 +230,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comments: true
+      comments: false
   # _pets
   - scope:
       path: ""
