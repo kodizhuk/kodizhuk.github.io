@@ -7,6 +7,7 @@ tags:
   - kicad
   - oneshape
   - en
+  - learning
 toc: true
 toc_label: "Posts"
 ---
@@ -62,6 +63,7 @@ I have found the script [here](https://cad.onshape.com/documents/a5566bc4a7c123d
 ```java
 FeatureScript 2679;
 import(path : "onshape/std/common.fs", version : "2679.0");
+
  const MY_HOLES_DIAMETER =
  {
       (meter)      : [-500, 0.00135, 500],
@@ -98,10 +100,10 @@ export const xyzCSV = defineFeature(function(context is Context, id is Id, defin
             annotation { "Name" : "Holes Diameter" }
             isLength(definition.holeDiameter, MY_HOLES_DIAMETER);
             
-            annotation { "Name" : "Orig", "Filter" : EntityType.VERTEX  , "MaxNumberOfPicks" : 1 }
+            annotation { "Name" : "Start Point", "Filter" : EntityType.VERTEX  , "MaxNumberOfPicks" : 1 }
             definition.orig is Query;
-            annotation { "Name" : "Path", "Filter" : EntityType.EDGE  && GeometryType.LINE, "MaxNumberOfPicks" : 1 }
-            definition.path is Query;
+            annotation { "Name" : "End Point", "Filter" : EntityType.VERTEX  , "MaxNumberOfPicks" : 1 }
+            definition.origend is Query;
              
             annotation { "Name" : "Choose face", "Filter" : EntityType.FACE, "MaxNumberOfPicks" : 1 }
             definition.face is Query;
@@ -110,33 +112,38 @@ export const xyzCSV = defineFeature(function(context is Context, id is Id, defin
     }
 
     //---------------
+
     {
         var importedData = definition.pointData.csvData;
         var numRows = size(importedData);
         var points = [];
+        
+        println("Value of numRows: " ~ numRows);
+
         var cx = TP_X_COLUMN;
         var cy = TP_Y_COLUMN;
         
         // create coordinate system
-        var endPoints is Query = qAdjacent(definition.path, AdjacencyType.VERTEX, EntityType.VERTEX);
         var startPosition is Vector = evVertexPoint(context, {
-            "vertex" : qNthElement(endPoints, 0)
+                "vertex" : definition.orig
         });
         var endPosition is Vector = evVertexPoint(context, {
-            "vertex" : qNthElement(endPoints, 1)
+                "vertex" : definition.origend
         });
+ 
         var xDirection is Vector = normalize(endPosition - startPosition);
         var zDirection is Vector = evOwnerSketchPlane(context, {
                 "entity" : definition.face
             }).normal;
         var cSys is CoordSystem = coordSystem(startPosition, xDirection, zDirection);
         
+       
         // create scetch plane
         var sketchPlane is Plane = plane(cSys);
         var sketch1 = newSketchOnPlane(context, id + "sketch1", {
             "sketchPlane" : sketchPlane
         });
-
+        
         // draw holes
         for (var i = 1; i <= (numRows - 1); i += 1)
         {
@@ -147,7 +154,6 @@ export const xyzCSV = defineFeature(function(context is Context, id is Id, defin
 
             if (definition.bPlotPointsT && side == "TOP")
             {
-                // println((newPoint+xyShift));
                 skCircle(sketch1, "circle"~i, {
                         "center" : newPoint,
                         "radius" : definition.holeDiameter/2,
@@ -167,9 +173,7 @@ export const xyzCSV = defineFeature(function(context is Context, id is Id, defin
             // extrude holes
             opExtrude(context, id + "extrude1", {
                     "entities" : qSketchRegion(id + "sketch1", false),
-                    // "direction" : evOwnerSketchPlane(context, {"entity" : qSketchRegion(id + "sketch1", true)}).normal,
                     "direction" : zDirection,
-                    // "endBound" : BoundingType.UP_TO_NEXT,
                     "startBound" : BoundingType.UP_TO_NEXT,
                     "endBound" : BoundingType.BLIND,
                     "endDepth" : 0 * millimeter
@@ -184,11 +188,15 @@ export const xyzCSV = defineFeature(function(context is Context, id is Id, defin
                         "targets" : targets,
                         "operationType" : BooleanOperationType.SUBTRACTION
                     });
+                    
             opDeleteBodies(context, id + "delete1", {
                 "entities" : qCreatedBy(id + "sketch1", EntityType.BODY)
             });
         }
+        
+        
     });
+
 
 ```
 
