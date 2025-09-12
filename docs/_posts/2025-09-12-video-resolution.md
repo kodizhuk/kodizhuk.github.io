@@ -79,8 +79,7 @@ The bitrate is also a internet speed which you need to stream your video. For ex
 With a decent Wi-Fi 6 router, you could have at 100-150 Mbps at far range with 2.4 GHz, and it is why better to use 5GHz or wired connection for your TV to watch the movie in 4k at high quality.
 
 ## Links
-
-- https://support.google.com/youtube/answer/1722171?hl=en#zippy=%2Cframe-rate%2Cbitrate
-- https://www.wiisfi.com/
+- [support.google.com](https://support.google.com/youtube/answer/1722171?hl=en#zippy=%2Cframe-rate%2Cbitrate)
+- [wiisfi.com](https://www.wiisfi.com/)
 
 &nbsp;
