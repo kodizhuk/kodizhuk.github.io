@@ -1,6 +1,6 @@
 ---
 title:  "Video Quality"
-last_modified_at: 2024-10-30T11:00:00+03:00
+last_modified_at: 2025-09-12T11:00:00+03:00
 categories: 
   - blog
 tags:
