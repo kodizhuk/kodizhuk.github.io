@@ -32,6 +32,13 @@ I'm using plugin "Testpoint Report Setup". 
 We need the coordinate system to start from the bottom left corner, so testpoint positions will be calculated from this point. And it will be much easier to position our PCB in 3D view by two edges.
 
 ![oneshape-featurescript-4.png](/assets/resources/oneshape-featurescript-4.png)
+
+The origing should be selected as the bottom left crner of the PCB
+![oneshape-featurescript-9.png](/assets/resources/oneshape-featurescript-9.png)
+![oneshape-featurescript-10.png](/assets/resources/oneshape-featurescript-10.png)
+![oneshape-featurescript-11.png](/assets/resources/oneshape-featurescript-11.png)
+
+
 ![oneshape-featurescript-5.png](/assets/resources/oneshape-featurescript-5.png)
 
 After submitting you can see the .csv file created.
