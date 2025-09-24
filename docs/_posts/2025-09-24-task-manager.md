@@ -13,7 +13,7 @@ toc_label: "Posts"
 
 ## Cтруктура коду
 
-```с
+```C
 //libs include
 //function definition
 
@@ -35,7 +35,7 @@ void main(){
 
 В main пишемо менеджера завдань, flags будуть виставлятися таймером, і кожне завдання буде запускатися з потрібною частотою.
 
-```с
+```C
 if(flag[ACTION1]) Task1();
 if(flag[ACTION2]) Task2();
 if(flag[ACTION3]) Task3();
@@ -49,14 +49,14 @@ HAL_Delay(1);
 
 Також можна добавити декілька функції якщо потрібно більше, просто добавити сюди ще змінні.
 
-```с
+```C
 uint8_t flag[MAX_NUM_OF_TIMERS] = {0,0,0,0};
 enum {ACTION1, ACTION2, ACTION3, ACTION4};
 ```
 
 ## Фінальний код
 
-```c
+```C
 #define MAX_NUM_OF_TIMERS   7
 #define TASK1_TIME 60000
 #define TASK2_TIME 30000
