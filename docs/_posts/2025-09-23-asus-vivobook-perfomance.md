@@ -14,8 +14,12 @@ Just a notes of using Asus Vivibook Pro
 
 ## Overview
 
-![asus-vivobook-perfomance-1.png](/assets/resources/asus-vivobook-perfomance-1.png)
-![asus-vivobook-perfomance-2.png](/assets/resources/asus-vivobook-perfomance-2.png)
+
+<figure class="half">
+    <a href="/assets/resources/asus-vivobook-perfomance-1.png"><img src="/assets/resources/asus-vivobook-perfomance-1.png" alt="Asus Vivobook performance 1"></a>
+    <a href="/assets/resources/asus-vivobook-perfomance-2.png"><img src="/assets/resources/asus-vivobook-perfomance-2.png" alt="Asus Vivobook performance 2"></a>
+    <figcaption>Asus Vivobook performance.</figcaption>
+</figure>
 
 
 | Name | Model |

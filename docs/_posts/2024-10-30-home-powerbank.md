@@ -11,16 +11,18 @@ toc_label: "Posts"
 
 Повербанк для квартири на LiFePO4 акумуляторах.
 
-![home-powerbank-1.png](/assets/resources/home-powerbank-1.png)
+<figure class="half">
+  <a href="/assets/resources/home-powerbank-1.png"><img src="/assets/resources/home-powerbank-1.png"></a>
+</figure>  
 
 
 ## Технічне завдання
 
 Через російську агресію та атаку на Українську інфраструктуру час від часу відбувається вимкнення світла. Графік увімкнення світла у Львові можуть міняти по декілька разів на день.
 
-<figure>
-  <a href="/assets/resources/home-powerbank-2.png"><img src="/assets/resources/home-powerbank-2.png" style="width: 25vw; min-width: 15px;"></a>
-</figure>
+
+![home-powerbank-2.png](/assets/resources/home-powerbank-2.png)
+
 
 Тому нарешті дійшли руки щоб замовити акумулятори та зібрати повербанк для квартири. Ми живемо на орендованій квартирі, тому ТЗ трішки специфічне.
 
@@ -49,9 +51,12 @@ PowMr 3000W Hybrid Solar Inverter, купував на [алі](https://www.alie
 | підключення | WiFi | |
 | моніторинг | потужність <br> наявність менержі <br> заряд акумулятора
     
-<figure>
-  <a href="/assets/resources/home-powerbank-3.png"><img src="/assets/resources/home-powerbank-3.png" style="width: 15vw; min-width: 15px;"></a>
+<figure class="half">
+  <a href="/assets/resources/home-powerbank-3.png"><img src="/assets/resources/home-powerbank-3.png"></a>
+  <figcaption>PowMR Inverter</figcaption>
 </figure>    
+
+
 
 ## Акумулятори
 
@@ -69,10 +74,10 @@ PowMr 3000W Hybrid Solar Inverter, купував на [алі](https://www.alie
 
 Ішли більше 2 місяців, прийшли гарно запаковані, опір тож ніби ок.
 
-<figure>
-  <a href="/assets/resources/home-powerbank-4.png"><img src="/assets/resources/home-powerbank-4.png" style="width: 15vw; min-width: 15px;"></a>
-  <a href="/assets/resources/home-powerbank-5.png"><img src="/assets/resources/home-powerbank-5.png" style="width: 15vw; min-width: 15px;"></a>
-  <a href="/assets/resources/home-powerbank-6.png"><img src="/assets/resources/home-powerbank-6.png" style="width: 15vw; min-width: 15px;"></a>
+<figure class="third">
+  <a href="/assets/resources/home-powerbank-4.png"><img src="/assets/resources/home-powerbank-4.png"></a>
+  <a href="/assets/resources/home-powerbank-5.png"><img src="/assets/resources/home-powerbank-5.png"></a>
+  <a href="/assets/resources/home-powerbank-6.png"><img src="/assets/resources/home-powerbank-6.png"></a>
 </figure>
 
 
@@ -86,14 +91,14 @@ PowMr 3000W Hybrid Solar Inverter, купував на [алі](https://www.alie
 | струм балансування | 1А |
 | інтерфейс | блютуз |
 
-<figure>
-  <a href="/assets/resources/home-powerbank-7.png"><img src="/assets/resources/home-powerbank-7.png" style="width: 15vw; min-width: 15px;"></a>
+<figure class="half">
+  <a href="/assets/resources/home-powerbank-7.png"><img src="/assets/resources/home-powerbank-7.png"></a>
 </figure>
 
 Апку на андроїд можна скачати з [PlayMarket](https://play.google.com/store/apps/details?id=com.jktech.bms)
 
-<figure>
-  <a href="/assets/resources/home-powerbank-9.png"><img src="/assets/resources/home-powerbank-9.png" style="width: 15vw; min-width: 15px;"></a>
+<figure class="half">
+  <a href="/assets/resources/home-powerbank-9.png"><img src="/assets/resources/home-powerbank-9.png"></a>
 </figure>
 
 ## Корпус
@@ -102,8 +107,8 @@ PowMr 3000W Hybrid Solar Inverter, купував на [алі](https://www.alie
 
 Намалював модель в oneshape, замовив у Львові, десь за тиждень зробили. Модель та всі креслення доступні для редагування ось тут [OneShape](https://cad.onshape.com/documents/a14eecb62d29b860f6b12bec/w/0b682ec30c09bee4485dcb84/e/76a46c6da80f7123c9651ecc?renderMode=0&uiState=6707d0970a76693ecd81cf8b)
 
-<figure>
-  <a href="/assets/resources/home-powerbank-10.png"><img src="/assets/resources/home-powerbank-10.png" style="width: 15vw; min-width: 15px;"></a>
+<figure class="half">
+  <a href="/assets/resources/home-powerbank-10.png"><img src="/assets/resources/home-powerbank-10.png"></a>
 </figure>
 
 ## Підключення
